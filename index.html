@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <title>Kukiweb Studios - Where games and videos come alive.</title>
         <style>
             body {
                 margin: 0;
@@ -17,6 +18,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex: 1;
+                flex-direction: column-reverse;
             }
             canvas {
                 background-color: white;
@@ -33,12 +36,42 @@
                     background-position: 0% 50%;
                 }
             }
+            .noteDiv {
+                border-color: yellow;
+                background: darkgreen;
+                border-radius: 25px;
+                margin: 10px;
+                font-family: "Roboto", serif;
+            }
+            .noteHeadline {
+                color: white;
+                font-weight: bold;
+                margin: 20px;
+            }
         </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
-    <script type="module">
-        import init from "./out/vomitter.js";
-        init();
-    </script>
+    <body>
+        <script type="module">
+            import init from "./out/vomitter.js";
+            init();
+        </script>
+        <div class="noteDiv">
+            <h2 class="noteHeadline"><u>Note</u></h2>
+            <p style="margin: 10px; color: white">
+                Note that this game is just a beta version of of the original
+                Kukiweb Vommiter. This website will change to feature more free
+                unpaid games. If you are interested about the Kukiweb Studios
+                gaming projects, feel free to check out our main website
+                <a href="https://kukiweb.cz">here</a>!
+            </p>
+        </div>
+    </body>
 </html>
 
 <!--mozno odinstalovat atmosphere na test iba (nova branch atd upratat a napisat index.html znova) -->
